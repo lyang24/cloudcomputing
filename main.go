@@ -52,7 +52,7 @@ func main() {
     log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
-func postHandler(w http.ResponseWritter, r *http.Request) {
+func postHandler(w http.ResponseWriter, r *http.Request) {
   fmt.Println("This is post handler.")
 
   decoder:=json.NewDecoder(r.Body)
