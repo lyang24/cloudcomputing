@@ -33,9 +33,9 @@ type Interaction struct {
 }
 
 type Ad struct {
-  Features Features `json:"features"`
-  Tags map(string)float64 `json:"tags"`
-  Interaction Interaction `json:"Interaction"`
+    Features    Features           `json:"features"`
+    Tags        map[string]float64 `json:"tags"`
+    Interaction Interaction        `json:"interaction"`
 }
 
 func main() {
